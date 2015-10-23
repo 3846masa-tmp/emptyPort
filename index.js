@@ -11,7 +11,7 @@ var empryPort = function (opt, callback) {
         var range = maxPort - startPort;
 
         var pickRandomPort = function () {
-                if (usedPortCount >= range) {
+                if (usedPortCount > range) {
                         return null;
                 }
 
